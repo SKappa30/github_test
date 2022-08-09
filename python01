@@ -1,0 +1,12 @@
+x = [3, 2, 4, 1, 2, 3, 4, 3, 4, 4]
+N = len(x)
+Σx = 0
+μ = 0
+var = 0
+for i in range(N):
+    Σx = Σx + x[i]
+μ = Σx/N
+for i in range(N):
+    var = var + (x[i]-μ)**2
+var = var/N
+print('N = %d, μ = %2.3f, var = %2.3f' %(N, μ, var))
